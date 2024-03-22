@@ -1,0 +1,5 @@
+!.gitignore
+*.apk
+*.deb
+*.rpm
+*.zst

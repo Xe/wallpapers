@@ -1,0 +1,26 @@
+# nfpm example configuration file
+#
+# check https://nfpm.goreleaser.com/configuration for detailed usage
+#
+name: "xe-wallpapers-jxl"
+arch: "all"
+platform: "linux"
+version: "1.0.0"
+section: "default"
+priority: "extra"
+maintainer: "Xe Iaso <me@xeiaso.net>"
+description: |
+  Wallpapers for Linux systems. Photography by Xe Iaso.
+vendor: "Techaro"
+homepage: "https://xeiaso.net/blog/2024/wallpapers"
+license: "CC BY-SA 4.0"
+changelog: "changelog.yml"
+contents:
+- src: ./src/jxl/*.jxl
+  dst: /usr/share/backgrounds/
+- src: ./src/jxl/*.xml
+  dst: /usr/share/backgrounds/
+- src: ./LICENSE
+  dst: /usr/share/doc/xe-wallpapers
+- src: ./README.md
+  dst: /usr/share/doc/xe-wallpapers
