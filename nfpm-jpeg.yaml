@@ -5,13 +5,13 @@
 name: "xe-wallpapers-jpeg"
 arch: "all"
 platform: "linux"
-version: "1.0.0"
+version: "0.0.1"
 section: "default"
 priority: "extra"
 maintainer: "Xe Iaso <me@xeiaso.net>"
 description: |
   Wallpapers for Linux systems. Photography by Xe Iaso.
-vendor: "Techaro"
+vendor: "Xe Iaso"
 homepage: "https://xeiaso.net/blog/2024/wallpapers"
 license: "CC BY-SA 4.0"
 changelog: "changelog.yml"
@@ -21,6 +21,6 @@ contents:
 - src: ./src/jpeg/*.xml
   dst: /usr/share/backgrounds/
 - src: ./LICENSE
-  dst: /usr/share/doc/xe-wallpapers
+  dst: /usr/share/doc/xe-wallpapers/
 - src: ./README.md
-  dst: /usr/share/doc/xe-wallpapers
+  dst: /usr/share/doc/xe-wallpapers/

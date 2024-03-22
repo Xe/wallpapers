@@ -1,0 +1,12 @@
+- semver: 0.0.1
+  date: 2024-03-22T10:53:48-04:00
+  packager: Xe Iaso <me@xeiaso.net>
+  changes:
+    - commit: 066d293f13d198d7b0b902e06f595f059238d31a
+      note: initial commit
+      author:
+        name: Xe Iaso
+        email: me@xeiaso.net
+      committer:
+        name: Xe Iaso
+        email: me@xeiaso.net
