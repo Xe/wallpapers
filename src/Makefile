@@ -6,6 +6,6 @@ jpeg/%.jpeg: orig/%.jpeg
 	convert $< -quality 85 $@
 
 jxl/%.jxl: orig/%.jpeg
-	cjxl --lossless_jpeg=0 --quality 85 $< $@
+	cjxl --quality=85 --effort=9 --brotli_effort=11 --lossless_jpeg=0 $< $@
 
 all: ${JXLS} ${JPEGS}
