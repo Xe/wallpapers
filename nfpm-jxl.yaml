@@ -5,7 +5,7 @@
 name: "xe-wallpapers-jxl"
 arch: "all"
 platform: "linux"
-version: "0.0.1"
+version: "0.0.8"
 section: "default"
 priority: "extra"
 maintainer: "Xe Iaso <me@xeiaso.net>"
@@ -19,10 +19,18 @@ conflicts:
   - "xe-wallpapers-jpeg"
 contents:
 - src: ./src/jxl/*.jxl
-  dst: /usr/share/backgrounds/
-- src: ./src/jxl/*.xml
-  dst: /usr/share/backgrounds/
+  dst: /usr/share/backgrounds/xe
+- src: ./src/jpeg/*.xml
+  dst: /usr/share/gnome-background-properties
 - src: ./LICENSE
   dst: /usr/share/doc/xe-wallpapers/
 - src: ./README.md
   dst: /usr/share/doc/xe-wallpapers/
+
+deb:
+  signature:
+    key_id: 962BB7F2650A31CF185AE3157338EBA1298448CC
+    
+rpm:
+  signature:
+    key_id: 962BB7F2650A31CF185AE3157338EBA1298448CC
