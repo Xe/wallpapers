@@ -48,7 +48,7 @@
         };
 
         devShells.default = pkgs.mkShell {
-          buildInputs = with pkgs; [ imagemagick libjxl nfpm ];
+          buildInputs = with pkgs; [ imagemagick libjxl nfpm tea ];
         };
       });
 }
